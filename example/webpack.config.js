@@ -11,7 +11,7 @@ module.exports = {
     bundle: ['./app/app.js'],
   },
   output: {
-    path: __dirname + '/public',
+    publicPath: '',
     filename: 'app.js',
   },
   module: {

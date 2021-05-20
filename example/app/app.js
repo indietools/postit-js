@@ -3,8 +3,6 @@ import $ from 'jquery';
 import 'postit-js-core/assets/postit-js.css';
 import PostItModeler from 'postit-js-core/lib/Modeler';
 
-import newBoardXML from '../resources/newBoard.xml';
-import emptyBoardXML from '../resources/emptyBoard.xml';
 
 // modeler instance
 var modeler = new PostItModeler({
@@ -178,12 +176,6 @@ $(function() {
 
 });
 
-// bootstrapping
-initSentry();
-initGA();
-
-openBoard(newBoardXML);
-
 
 // helpers //////////////////////
 
@@ -197,23 +189,4 @@ function debounce(fn, timeout) {
 
     timer = setTimeout(fn, timeout);
   };
-}
-
-function initSentry() {
-  if (process.env.SENTRY_DSN && process.env.SOURCE_VERSION && typeof Sentry !== 'undefined') {
-    Sentry.init({
-      dsn: process.env.SENTRY_DSN,
-      release: process.env.SOURCE_VERSION
-    });
-
-    // TEST
-    // Sentry.captureException(new Error('Something broke'));
-  }
-}
-
-function initGA() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-72700874-2');
 }

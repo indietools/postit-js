@@ -154,7 +154,7 @@ button:hover, a:hover {
   margin: 8px;
   width: 32px !important;
   height: 32px !important;
-  background-color: #7fc844;
+  background-color: #FFFF88;
 }
 
 .pjs-postit-circle {
@@ -222,7 +222,7 @@ button:hover, a:hover {
 }
 
 .pjs-color-entry-YELLOW {
-  background-color: #F5D128 !important;
+  background-color: #FFFF88 !important;
 }
 
 .pjs-color-entry-BLACK {
@@ -268,6 +268,10 @@ button:hover, a:hover {
   text-align: left;
   color:#555555;
 }  
+
+.pjs-io-dialog-text-hint a:hover {
+  background-color: transparent;
+}
 
 .pjs-io-dialog-text-hint .pjs-tooltip .pjs-tooltiptext  {
     margin-left: -80px !important;
@@ -538,4 +542,6 @@ input, textarea {
   box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-
+.djs-visual {
+  filter: url(#noteDropShadow);
+}
