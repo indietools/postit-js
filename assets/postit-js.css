@@ -355,6 +355,7 @@ button:hover, a:hover {
   border: solid 1px #cdcdcd;
 }
 
+/*
 button:hover {
   cursor: pointer;
 }
@@ -367,6 +368,7 @@ input, textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+*/
 
 #pjs-image-dialog-text-hint-list li {
   line-height: 22px;
