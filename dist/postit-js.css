@@ -13,8 +13,8 @@
   url("./font-awesome-5/29f589f173dcc69ef6c805b711894998.svg#Font Awesome 5 Free Solid") format("svg"); /* iOS 4.1- */
 }
 
-@import '../node_modules/diagram-js/assets/diagram-js.css';
-@import '../node_modules/bpmn-font/dist/css/bpmn.css';
+@import 'diagram-js/assets/diagram-js.css';
+@import 'bpmn-font/dist/css/bpmn.css';
 
 
 /* OVERWRITING Diagram.js */
@@ -355,6 +355,7 @@ button:hover, a:hover {
   border: solid 1px #cdcdcd;
 }
 
+/*
 button:hover {
   cursor: pointer;
 }
@@ -367,6 +368,7 @@ input, textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+*/
 
 #pjs-image-dialog-text-hint-list li {
   line-height: 22px;
